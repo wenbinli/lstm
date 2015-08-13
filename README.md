@@ -16,6 +16,8 @@ Some implementations of LSTM model, currently including:
 ## Running
 For the PTB test:
 
+Download PTB data files (ptb.train.txt,ptb.valid.txt,ptb.test.txt) from the repository https://github.com/wojzaremba/lstm/tree/master/data into the same folder as of the scripts, and run
+
 `$ python lstm_PTB.py`
 
 For the Reber Grammar test:
