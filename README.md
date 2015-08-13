@@ -1,4 +1,4 @@
-# Some code for Long Short Term Memory (LSTM)
+# Some code for Long Short Term Memory
 ## Overview
 Some implementations of LSTM model, currently including:
 * Language modeling on PTB dataset
