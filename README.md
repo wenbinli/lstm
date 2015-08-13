@@ -3,10 +3,13 @@
 Some implementations of LSTM model, currently including:
 * Language modeling on PTB dataset
 
-  An initial Theano implementation of the *sequence-to-sequence* LSTM, based on the torch code https://github.com/wojzaremba/lstm with the same test on PTB dataset.
+  An initial Theano implementation of the *sequence-to-sequence* LSTM, based on the torch code https://github.com/wojzaremba/lstm with the same test on PTB dataset. It preserves features including gradient clipping, mini-batch, learning rate adjustment.
+  
 * Reber Grammar test
 
-  A sample code of mini-batch implementation for the *sequence-to-sequence* LSTM based on the theano code http://christianherta.de/lehre/dataScience/machineLearning/neuralNetworks/LSTM.php. The speedup part is mainly referred to the Theano lstm tutorial code for sentiment analysis (sequence-to-label) http://deeplearning.net/tutorial/code/lstm.py
+  A sample code of mini-batch implementation for the *sequence-to-sequence* LSTM based on the theano code http://christianherta.de/lehre/dataScience/machineLearning/neuralNetworks/LSTM.php. 
+  
+  The original code is not suitable running on GPU and with mini-batch, it gives around 4-5 times speedup on CPU version and makes itself GPU friendly. The speedup part is mainly referred to the Theano lstm tutorial code for sentiment analysis (sequence-to-label) http://deeplearning.net/tutorial/code/lstm.py
 
 ## Dependencies
 
