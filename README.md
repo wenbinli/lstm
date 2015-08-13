@@ -21,11 +21,11 @@ For the PTB test:
 
 Download PTB data files (ptb.train.txt,ptb.valid.txt,ptb.test.txt) from the repository https://github.com/wojzaremba/lstm/tree/master/data into the same folder as of the scripts, and run
 
-`$ python lstm_PTB.py`
+`$ python lstm_ptb.py`
 
 For the Reber Grammar test:
 
-`$ python lstm_RG.py`
+`$ python lstm_rg.py`
 
 ## Notes
 0. There are still some issues with the PTB test code, 
