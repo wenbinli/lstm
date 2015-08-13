@@ -1,4 +1,4 @@
-# theano-lstm
+# Some code for Long Short Term Memory (LSTM)
 ## Overview
 Some implementations of LSTM model, currently including:
 * Language modeling on PTB dataset
