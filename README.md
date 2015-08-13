@@ -7,14 +7,17 @@ Some implementations of LSTM model, currently including:
   
 * Reber Grammar test
 
-  A sample code of mini-batch implementation for the *sequence-to-sequence* LSTM based on the theano code http://christianherta.de/lehre/dataScience/machineLearning/neuralNetworks/LSTM.php. 
+  A modified version of the implementation for the *sequence-to-sequence* LSTM based on the theano code http://christianherta.de/lehre/dataScience/machineLearning/neuralNetworks/LSTM.php. 
   
   The original code is not suitable running on GPU and with mini-batch, it gives around 4-5 times speedup on CPU version and makes itself GPU friendly. The speedup part is mainly referred to the Theano lstm tutorial code for sentiment analysis (sequence-to-label) http://deeplearning.net/tutorial/code/lstm.py
+  
+  A torch version modified from the code https://github.com/wojzaremba/lstm
 
 ## Dependencies
 
 * Nvidia Kepler or later GPU with CUDA 6.5 or newer
 * Theano https://github.com/Theano/Theano
+* Torch with cutorch, cunn, nngraph
 
 ## Running
 For the PTB test:
@@ -25,7 +28,11 @@ Download PTB data files (ptb.train.txt,ptb.valid.txt,ptb.test.txt) from the repo
 
 For the Reber Grammar test:
 
-`$ python lstm_rg.py`
+  Python version: `$ python lstm_rg.py`
+
+  Torch version:  `$ th lstm_rg.lua`
+
+Note for torch version you also need to download the files base.lua and data.lua from https://github.com/wojzaremba/lstm
 
 ## Notes
 0. There are still some issues with the PTB test code, 
