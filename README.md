@@ -1,8 +1,13 @@
 # theano-lstm
 ## Overview
 Some implementations of LSTM model, currently including:
-* an initial Theano implementation of the *sequence-to-sequence* LSTM, based on the torch code https://github.com/wojzaremba/lstm with the same test on PTB dataset.
-* a sample code of mini-batch implementation for the *sequence-to-sequence* LSTM based on the theano code http://christianherta.de/lehre/dataScience/machineLearning/neuralNetworks/LSTM.php for Reber Grammar 
+* Language modeling on PTB dataset
+
+  An initial Theano implementation of the *sequence-to-sequence* LSTM, based on the torch code https://github.com/wojzaremba/lstm with the same test on PTB dataset.
+* Reber Grammar test
+
+  A sample code of mini-batch implementation for the *sequence-to-sequence* LSTM based on the theano code http://christianherta.de/lehre/dataScience/machineLearning/neuralNetworks/LSTM.php for Reber Grammar 
+(The speedup part is mainly referred to the Theano lstm tutorial code for sentiment analysis (sequence-to-label) http://deeplearning.net/tutorial/code/lstm.py)
 
 ## Dependencies
 
@@ -22,9 +27,8 @@ For the Reber Grammar test:
 0. There are still some issues with the PTB test code, 
 namely the perplexity of training set decreases while increasing for validation set, 
 also the training speed is slower than torch code with almost the same setting.
-For productivity purpose, there are already quite a few theano-based implementations for LSTM model, including
+For productivity purpose, there are already some theano-based implementations for LSTM model, including
 
- * Theano lstm tutorial code for sentiment analysis (sequence-to-label)
  * Small Theano LSTM module https://github.com/JonathanRaiman/theano_lstm
  * Keras https://github.com/fchollet/keras
 
